@@ -33,3 +33,21 @@
 **Hint**: You can throw error in js like this: `throw new Error("Not Equal");`
 
 #### Solution file: `2704_To_Be_Or_Not_To_Be.js`
+
+## Day 4:
+
+**Q**: Write a function createCounter. It should accept an initial integer init. It should return an object with three functions.
+
+The three functions are:
+- increment() increases the current value by 1 and then returns it.
+- decrement() reduces the current value by 1 and then returns it.
+- reset() sets the current value to init and then returns it.
+
+**Approach**: Define a function `createCounter` that accepts an initial integer `init`. Inside the function:
+- Declare a variable `currentValue` and initialize it with `init`.
+- Return an object that contains three methods:
+  - **`increment()`**: Increases `currentValue` by 1 using the `++` operator and returns the updated value.
+  - **`decrement()`**: Decreases `currentValue` by 1 using the `--` operator and returns the updated value.
+  - **`reset()`**: Resets `currentValue` to the initial value `init` and returns it.
+
+#### Solution file: `2665_Counter_II.js`
