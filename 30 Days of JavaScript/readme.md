@@ -9,3 +9,27 @@
 **Approach**: Directly return the string "Hello World".
 
 #### Solution file: `2667_Create_Hello_World_Function.js`
+
+## Day 2: 2620. Counter
+
+**Q**: Given an integer `n`, return a counter function. This counter function initially returns `n` and then returns `1` more than the previous value every subsequent time it is called `(n, n + 1, n + 2, etc)`.
+
+**Approach**: First, take a `counter` that increases by one with every function call and returns `counter + n`.
+
+#### Solution file: `2620_Counter.js`
+
+
+## Day 3: 
+
+**Q**: Write a function expect that helps developers test their code. It should take in any value val and return an object with the following two functions.
+
+- toBe(val) accepts another value and returns true if the two values === each other. If they are not equal, it should throw an error "Not Equal".
+- notToBe(val) accepts another value and returns true if the two values !== each other. If they are equal, it should throw an error "Equal".
+
+**Approach**: Define a function `expect` that takes a value `val`. Inside, return an object containing two methods: 
+- **`toBe`**: Checks if `val === args`, returning `true` if they are equal, otherwise throws "Not Equal".
+- **`notToBe`**: Checks if `val !== args`, returning `true` if they are not equal, otherwise throws "Equal".
+
+**Hint**: You can throw error in js like this: `throw new Error("Not Equal");`
+
+#### Solution file: `2704_To_Be_Or_Not_To_Be.js`
