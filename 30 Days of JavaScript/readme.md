@@ -19,7 +19,7 @@
 #### Solution file: `2620_Counter.js`
 
 
-## Day 3: 
+## Day 3: 2704. To Be Or Not To Be
 
 **Q**: Write a function expect that helps developers test their code. It should take in any value val and return an object with the following two functions.
 
@@ -34,7 +34,7 @@
 
 #### Solution file: `2704_To_Be_Or_Not_To_Be.js`
 
-## Day 4:
+## Day 4: 2665. Counter II
 
 **Q**: Write a function createCounter. It should accept an initial integer init. It should return an object with three functions.
 
@@ -51,3 +51,21 @@ The three functions are:
   - **`reset()`**: Resets `currentValue` to the initial value `init` and returns it.
 
 #### Solution file: `2665_Counter_II.js`
+
+## Day 5: 2635. Apply Transform Over Each Element in Array
+
+**Q**: Given an integer array arr and a mapping function fn, return a new array with a transformation applied to each element.
+
+The returned array should be created such that returnedArray[i] = fn(arr[i], i).
+
+Please solve it without the built-in Array.map method.
+
+**Approach**: Define a function `map` that accepts two arguments: an integer array `arr` and a mapping function `fn`. Inside the function:
+- Initialize an empty array `newArr` to store the transformed elements.
+- Use a `for` loop to iterate over each element of `arr`:
+  - For each element `arr[i]`, call `fn(arr[i], i)` and push the result to `newArr`.
+- Return `newArr` after the loop finishes.
+
+#### Solution file: `2635_Apply_Transform_Over_Each_Element_in_Array.js`
+
+
